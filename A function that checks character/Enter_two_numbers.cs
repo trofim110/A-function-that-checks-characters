@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Enter_two_numbers
-{
+namespace Enter_two_numbers;
+
     public class  Validationofvalues
     {
         public  int Compares_characters( int a, int b)
@@ -15,16 +15,12 @@ namespace Enter_two_numbers
             {
                 l--;
             }
-            else if ((a>64&&b>64&&a<91&&b<91)||(a>96&&b>96&&a<123&&b<123))
+            else if (((a>64)&&(b>64)&&(a<91)&&(b<91))||((a>96)&&(b>96)&&(a<123)&&(b<123)))
             {
                 l++;   //Если оба символа являются буквенными, и находятся в одном регистре, то вернуть 1
 
             }
-            else if ((a > 64 && b > 96 && a < 91 && b < 123) || (a > 96 && b > 64 && a < 123 && b < 91))
-            {
-                //Если оба символа являются буквенными, но находятся в разных регистрах, то вернуть 0
 
-            }
 
             return l;
         }
@@ -39,9 +35,9 @@ namespace Enter_two_numbers
 
             if (Value_1.Length < 2 || Value_2.Length < 2)  //Проверка ,что пользователь ввел по одному сиволу
             {
-                int a, b,result;
+                int a, b;
                 a=  Value_1[0];
-                b=  Value_1[0];
+                b=  Value_2[0];
                 Console.WriteLine(c.Compares_characters( a, b));
             }
             else
@@ -50,4 +46,3 @@ namespace Enter_two_numbers
             }
         }
     }
-}
