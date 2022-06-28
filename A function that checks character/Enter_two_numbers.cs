@@ -22,6 +22,7 @@ namespace Enter_two_numbers;
             }
 
 
+
             return l;
         }
         public static void Main(string[] args)
