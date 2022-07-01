@@ -4,7 +4,45 @@
     <projectFile>prototip/prototip.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e31abea-8afa-4df6-b6ac-328637ab0e75" name="Changes" comment="" />
+    <list default="true" id="7e31abea-8afa-4df6-b6ac-328637ab0e75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.C#Practices./.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.C#Practices./.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.C#Practices./.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.prototip/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.prototip/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C#Practices..sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/bin/Debug/net6.0/prototip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/bin/Debug/net6.0/prototip.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/bin/Debug/net6.0/prototip.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/bin/Debug/net6.0/prototip.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/bin/Debug/net6.0/prototip.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/bin/Debug/net6.0/ref/prototip.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/apphost" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/prototip.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/Debug/net6.0/ref/prototip.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/prototip.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/prototip.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/prototip.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototip/prototip.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.tools",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -57,15 +95,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656561143244</updated>
-      <workItem from="1656561161691" duration="17201000" />
+      <workItem from="1656561161691" duration="20875000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value=".sln&#10;.object" />
+    <option name="LAST_COMMIT_MESSAGE" value=".sln&#10;.object" />
   </component>
 </project>
