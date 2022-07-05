@@ -1,6 +1,6 @@
 ﻿using System.Collections.Immutable;
 
-public class IsDigitSample
+public static class IsDigitSample
 {
     public static void Main()
     {
@@ -9,8 +9,9 @@ public class IsDigitSample
         string word=Console.ReadLine();
 
         List<char> Wordchar = new List<char>();
-        Wordchar=LogicSolution.transferInListAndDeleteLetters(word,Wordchar);
-        Wordchar.Sort();        // Перевел строку в список char, удалил все буквенные элементы
+        Wordchar.AddRange(word.Select(i=>Convert.ToChar(i)));
+        Wordchar = LogicSolution.DeleteLetters(Wordchar);
+        // Перевел строку в список char, удалил все буквенные элементы
 
 
         List<string> WWordString = new List<string>();
@@ -23,10 +24,16 @@ public class IsDigitSample
 
         Dictionary<int,int> listofDigits=new Dictionary<int,int>();
         LogicSolution.ConvertDictionary(WordInt,listofDigits);
-        // Добавил в словарь и отсортировал
+        // Добавил в словарь  отсортировал и вывел на экран результат
 
-        ConsoleCommands.inputResult();
-        ConsoleCommands.DataOutput(listofDigits);
+
+        Console.WriteLine("_____________-");
+
+
+        foreach (var VARIABLE in listofDigits)
+        {
+            Console.WriteLine($"Вы ввели число {VARIABLE.Key}---  столько =>  --{VARIABLE.Value}   ");
+        }
 
     }
     public static class ConsoleCommands
@@ -42,7 +49,7 @@ public class IsDigitSample
 
             foreach (var VARIABLE in listofDigits.OrderBy(VARIABLE=>VARIABLE.Value))
             {
-                Console.WriteLine($"Вы ввели число {VARIABLE.Key}---  столько раз  --{VARIABLE.Value}   ");
+                Console.WriteLine($"Вы ввели число {VARIABLE.Key}---  столько =>  --{VARIABLE.Value}   ");
             }
 
         }
@@ -50,29 +57,20 @@ public class IsDigitSample
     }
     public static class LogicSolution
     {
-        public static List<char> transferInListAndDeleteLetters(string word, List<char> Word )
+        public static List<char> DeleteLetters(List<char> Wordchar )
         {
-            for (int i = 0; i < word.Length; i++)
+            for (int i = 0; i < Wordchar.Count; i++)
             {
-                Word.Add(Convert.ToChar(word[i]));
-            }
-            return  DeleteLetters(Word);
-        }
-
-        public static List<char> DeleteLetters(List<char> Word )
-        {
-            for (int i = 0; i < Word.Count; i++)
-            {
-                if (!char.IsDigit(Word[i]))
+                if (!char.IsDigit(Wordchar[i]))
                 {
-                    Word.RemoveAt(i);
+                    Wordchar.RemoveAt(i);
                     i--;
                 }
             }
-            return Word;
+            return Wordchar;
         }
 
-        public static Dictionary<int, int> ConvertDictionary(List<int> WordInt,Dictionary<int, int> listofDigits)
+        public static void ConvertDictionary(List<int> WordInt,Dictionary<int, int> listofDigits)
         {
 
             for (int i = 0; i <= 13; i++)
@@ -88,7 +86,10 @@ public class IsDigitSample
 
             }
 
-            return listofDigits;
+          //  var sortedDict = listofDigits.OrderBy(i => i.Value);
+            ConsoleCommands.inputResult();
+            ConsoleCommands.DataOutput(listofDigits);
+
         }
 
     }

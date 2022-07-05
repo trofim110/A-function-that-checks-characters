@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\prototip\prototip.csproj" />
+      <ProjectReference Include="..\Csharp\Csharp.csproj" />
     </ItemGroup>
 
 </Project>
