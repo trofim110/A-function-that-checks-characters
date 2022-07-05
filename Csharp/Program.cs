@@ -26,15 +26,6 @@ public static class IsDigitSample
         LogicSolution.ConvertDictionary(WordInt,listofDigits);
         // Добавил в словарь  отсортировал и вывел на экран результат
 
-
-        Console.WriteLine("_____________-");
-
-
-        foreach (var VARIABLE in listofDigits)
-        {
-            Console.WriteLine($"Вы ввели число {VARIABLE.Key}---  столько =>  --{VARIABLE.Value}   ");
-        }
-
     }
     public static class ConsoleCommands
     {
@@ -85,8 +76,6 @@ public static class IsDigitSample
                 }
 
             }
-
-          //  var sortedDict = listofDigits.OrderBy(i => i.Value);
             ConsoleCommands.inputResult();
             ConsoleCommands.DataOutput(listofDigits);
 
