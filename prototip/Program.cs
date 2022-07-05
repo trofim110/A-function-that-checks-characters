@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Immutable;
 
 public class IsDigitSample
 {
@@ -6,15 +6,27 @@ public class IsDigitSample
     {
         ConsoleCommands.WordEnter();
 
-        string word;
-        word = Console.ReadLine();
+        string word=Console.ReadLine();
 
-        List<char> Word = new List<char>();
-        Word=LogicSolution.transferInListAndDeleteLetters(word,Word);
+        List<char> Wordchar = new List<char>();
+        Wordchar=LogicSolution.transferInListAndDeleteLetters(word,Wordchar);
+        Wordchar.Sort();        // Перевел строку в список char, удалил все буквенные элементы
 
-        ConsoleCommands.ListofEnteredDigits(Word);
-        Word.Sort();
-        ConsoleCommands.ListofEnteredDigits(Word);
+
+        List<string> WWordString = new List<string>();
+        WWordString.AddRange(Wordchar.Select((c=>c.ToString())));
+        // Перевел из Char в string
+
+        List<int> WordInt = new List<int>();
+        WordInt.AddRange(WWordString.Select(i=>Convert.ToInt32(i)));
+        // Перевел из string в int
+
+        Dictionary<int,int> listofDigits=new Dictionary<int,int>();
+        LogicSolution.ConvertDictionary(WordInt,listofDigits);
+        // Добавил в словарь и отсортировал
+
+        ConsoleCommands.inputResult();
+        ConsoleCommands.DataOutput(listofDigits);
 
     }
     public static class ConsoleCommands
@@ -25,19 +37,17 @@ public class IsDigitSample
         public static void inputResult()
             => Console.WriteLine("Результат слова");
 
-        public static void ListofEnteredDigits(List<char> Word )
+        public static void DataOutput(Dictionary<int, int> listofDigits)
         {
-            Console.WriteLine("Вы ввели такие цифры в своем слове");
 
-            for (int i = 0; i < Word.Count; i++)
+            foreach (var VARIABLE in listofDigits.OrderBy(VARIABLE=>VARIABLE.Value))
             {
-                Console.WriteLine(Word[i]);
+                Console.WriteLine($"Вы ввели число {VARIABLE.Key}---  столько раз  --{VARIABLE.Value}   ");
             }
 
         }
 
     }
-
     public static class LogicSolution
     {
         public static List<char> transferInListAndDeleteLetters(string word, List<char> Word )
@@ -60,6 +70,25 @@ public class IsDigitSample
                 }
             }
             return Word;
+        }
+
+        public static Dictionary<int, int> ConvertDictionary(List<int> WordInt,Dictionary<int, int> listofDigits)
+        {
+
+            for (int i = 0; i <= 13; i++)
+            {
+                if ((WordInt.FindAll(e => e == i).Count) == 0)
+                {
+                    continue;
+                }
+                else
+                {
+                    listofDigits.Add(i, WordInt.FindAll(e => e == i).Count);
+                }
+
+            }
+
+            return listofDigits;
         }
 
     }
